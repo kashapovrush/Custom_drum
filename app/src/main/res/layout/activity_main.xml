@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.kashapovrush.customdrum.CustomDrum
+        android:id="@+id/customDrum"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.kashapovrush.customdrum.DrumIndicator
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/customDrum"
+        app:layout_constraintStart_toEndOf="@+id/customDrum"
+        app:layout_constraintTop_toTopOf="@+id/customDrum" />
+
+    <Button
+        android:id="@+id/start_rotating_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Start rotating"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customDrum" />
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_rotating_btn" />
+
+
+    <com.kashapovrush.customdrum.RedText
+        android:id="@+id/red_text"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_btn" />
+
+    <com.kashapovrush.customdrum.LightBlueText
+        android:id="@+id/light_blue_text"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_btn" />
+
+    <com.kashapovrush.customdrum.VioletText
+        android:id="@+id/violet_text"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_btn" />
+
+    <com.kashapovrush.customdrum.YellowText
+        android:id="@+id/yellow_text"
+        android:visibility="invisible"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_btn" />
+
+    <ImageView
+        android:id="@+id/image_from_url"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
